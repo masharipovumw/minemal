@@ -1,0 +1,361 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background-color: #fff;
+  margin: 28px auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.wrapper .header {
+  opacity: 0.9;
+}
+.wrapper .header .header_bar_menu {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 18px;
+}
+.wrapper .header .header_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .header .header_row .nav_link {
+  color: #404040;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+.wrapper .header .header_row .nav_link:not(:last-child) {
+  margin-right: 34px;
+}
+.wrapper .header .header_banner {
+  width: 100%;
+  background-image: url(../img/back_ground/back_ground-img.png);
+  background-size: cover;
+  text-align: center;
+  padding: 90px;
+}
+.wrapper .header .header_banner h1 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 55px;
+}
+.wrapper .header p {
+  font-family: "Vollkorn";
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+}
+.wrapper .main {
+  flex: 1 1 auto;
+}
+.wrapper .main .main_top {
+  height: 289px;
+  background-color: #fefec9;
+  padding: 40px;
+}
+.wrapper .main .main_top .x_icon {
+  transform: matrix(1, 0, 0, 1, 461, -69);
+}
+.wrapper .main .main_top p {
+  text-align: center;
+}
+.wrapper .main .main_top .top_Btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+.wrapper .main .main_top .top_Btn button {
+  width: 159px;
+  height: 53px;
+  border: 1px solid #47474f;
+  font-family: Vollkorn;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+.wrapper .main .main_mid .mid_title {
+  text-align: center;
+}
+.wrapper .main .main_mid .mid_title h1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.wrapper .main .main_mid .mid_title .line {
+  background-color: #c8ccc9;
+}
+.wrapper .main .main_mid .mid_carts {
+  display: flex;
+}
+.wrapper .main .main_mid .mid_carts .cart_owe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 310px;
+  height: 368px;
+}
+.wrapper .main .main_mid .mid_carts .cart_owe:not(:last-child) {
+  margin-right: 15px;
+}
+.wrapper .main .main_mid .mid_carts .cart_owe .cart_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c8ccc9;
+  width: 300px;
+  height: 219px;
+}
+.wrapper .main .main_mid .mid_carts .cart_owe .cart_title {
+  padding: 18px;
+}
+.wrapper .main .main_mid .mid_carts .cart_owe h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px;
+}
+.wrapper .main .main_mid .mid_carts .cart_owe p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+  font-family: "Vollkorn";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+.wrapper .main .bottom_carts {
+  display: flex;
+  margin: 20px 0;
+}
+.wrapper .main .bottom_carts .cart_two {
+  text-align: center;
+}
+.wrapper .main .bottom_carts .cart_two:not(:last-child) {
+  margin-right: 20px;
+}
+.wrapper .main .bottom_carts .cart_two .cart_img {
+  width: 300px;
+  height: 300px;
+}
+.wrapper .main .bottom_carts .cart_two .cart_img img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .main .bottom_carts .cart_two .cart_title {
+  width: 300px;
+  height: 84px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.wrapper .main .bottom_carts .cart_two .cart_title h1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  color: #333333;
+}
+.wrapper .main .bottom_carts .cart_two .cart_title p {
+  font-family: "Vollkorn";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+.wrapper .main .team_block {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.wrapper .main .team_block .team_title {
+  text-align: center;
+}
+.wrapper .main .team_block .team_title h1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.wrapper .main .team_block .workers_cart {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .main .team_block .workers_cart .worker_cart {
+  padding: 5px;
+  width: 240px;
+  height: 339px;
+}
+.wrapper .main .team_block .workers_cart .worker_cart .cart_image {
+  height: 220px;
+}
+.wrapper .main .team_block .workers_cart .worker_cart .cart_image img {
+  height: 100%;
+}
+.wrapper .main .team_block .workers_cart .worker_cart .cart_name {
+  height: 20%;
+  background-color: #f5f5f5;
+}
+.wrapper .main .comment_block {
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+}
+.wrapper .main .comment_block .comment_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .main .comment_block .recomends {
+  display: flex;
+}
+.wrapper .main .comment_block .recomends .rec_right {
+  width: 50%;
+}
+.wrapper .main .comment_block .recomends .line_middle {
+  width: 2px;
+  height: 222px;
+  margin: 63px 87px;
+  background-color: #c8ccc9;
+}
+.wrapper .main .comment_block .recomends .content_img {
+  width: 64px;
+  height: 64px;
+  transform: matrix(1, 0, 0, 1, 176, 0);
+  margin: 15px 0;
+}
+.wrapper .main .comment_block .recomends .comment_text {
+  font-family: Vollkorn;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  color: #333333;
+}
+.wrapper .main .comment_block .recomends .content_name {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ababab;
+}
+.wrapper .main .comment_block .recomends .rec_left {
+  width: 50%;
+}
+.wrapper .footer .footer_top {
+  width: 100%;
+  background-image: url(../img/footer\ bg.png);
+  padding: 50px;
+}
+.wrapper .footer .footer_top .Top_footer {
+  font-family: Montserrat;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+.wrapper .footer .footer_top .footer_content {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .footer .footer_top .footer_content .footer_cart {
+  width: 319.98px;
+  height: 238px;
+  text-align: center;
+  padding: 20px;
+}
+.wrapper .footer .footer_top .footer_content .footer_cart .cart_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+.wrapper .footer .footer_top .footer_content .footer_cart .cart_image .foter_img {
+  width: 44px;
+  height: 65px;
+}
+.wrapper .footer .footer_top .footer_content .footer_cart .cart_image .foter_img_1 {
+  width: 70px;
+  height: 50px;
+}
+.wrapper .footer .footer_top .footer_content .footer_cart .cart_image .foter_img_2 {
+  width: 68px;
+  height: 56px;
+}
+.wrapper .footer .footer_top .footer_content .footer_cart .info_type {
+  margin: 5px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.wrapper .footer .footer_top .footer_content .footer_cart .cart_info {
+  height: 50%;
+}
+.wrapper .footer .footer_top .footer_content .footer_cart .cart_info p {
+  font-family: Vollkorn;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: #212121;
+}/*# sourceMappingURL=main.css.map */
